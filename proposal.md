@@ -35,7 +35,7 @@ Regularidad:
 Adicionales para Aprobación
 |Req|Detalle|
 |:-|:-|
-|CRUD |1. CRUD Producto<br>2. CRUD Cliente<br>3. CRUD Repartidor<br>4. CRUD Proveedor<br>4. CRUD Repartidor<br>4. CRUD Cajero<br>4. CRUD Repositor<br>4. CRUD Compra<br>4. CRUD Stock|
+|CRUD |1. CRUD Producto<br>2. CRUD Cliente<br>3. CRUD Repartidor<br>4. CRUD Proveedor<br>5. CRUD Repartidor<br>6. CRUD Cajero<br>7. CRUD Repositor<br>8. CRUD Compra<br>9. CRUD Stock|
 |CUU/Epic|1. Modificar Pedido<br>2. Dar de baja productos<br>3. Modificar productos|
 
 
