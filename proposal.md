@@ -2,7 +2,6 @@
 
 ## Grupo
 ### Integrantes
-* legajo - Apellido(s), Nombre(s)
 * 47048 - Zarate, Exequiel
 * 47094 - Martinez, Bruno
 * 43814 - Aieta, Federico
@@ -14,33 +13,30 @@
 
 ## Tema
 ### Descripción
-*2 a 6 líneas describiendo el negocio (menos es más)*
+La empresa de nuestro trabajo es un supermercado "FAST" que quiere desarrollar una página web para que los clientes puedan realizar pedidos de forma online.
 
 ### Modelo
-![imagen del modelo]()
-
-*Nota*: incluir un link con la imagen de un modelo, puede ser modelo de dominio, diagrama de clases, DER. Si lo prefieren pueden utilizar diagramas con [Mermaid](https://mermaid.js.org) en lugar de imágenes.
+![MODELO](https://github.com/BrunoMar99/DSW-TP/assets/166306860/517113d7-2b01-42b9-b8f7-72184b8229b2)
 
 ## Alcance Funcional 
 
 ### Alcance Mínimo
 
-*Nota*: el siguiente es un ejemplo para un grupo de 3 integrantes para un sistema de hotel. El 
 
 Regularidad:
 |Req|Detalle|
 |:-|:-|
-|CRUD simple|1. CRUD Tipo Habitacion<br>2. CRUD Servicio<br>3. CRUD Localidad|
-|CRUD dependiente|1. CRUD Habitación {depende de} CRUD Tipo Habitacion<br>2. CRUD Cliente {depende de} CRUD Localidad|
-|Listado<br>+<br>detalle| 1. Listado de habitaciones filtrado por tipo de habitación, muestra nro y tipo de habitación => detalle CRUD Habitacion<br> 2. Listado de reservas filtrado por rango de fecha, muestra nro de habitación, fecha inicio y fin estadía, estado y nombre del cliente => detalle muestra datos completos de la reserva y del cliente|
-|CUU/Epic|1. Reservar una habitación para la estadía<br>2. Realizar el check-in de una reserva|
+|CRUD simple|1. CRUD Producto<br>2. CRUD Cliente<br>3. CRUD Repartidor<br>4. CRUD Proveedor|
+|CRUD dependiente|1. CRUD Pedido {depende de} CRUD Cliente y Producto<br>2. CRUD Entrega {depende de} CRUD Repartidor y CRUD Cliente<br>3. CRUD Compra {depende de} CRUD Proveedor y CRUD Producto|
+|Listado<br>+<br>detalle| 1. Listado de productos filtrado por tipo de producto, nro de producto y precio<br> 2. Listado de pedidos filtrado por rango de fecha, por nro de pedido<br> 3. Listado de entregas filtrado por rango de fecha y por cliente|
+|CUU/Epic|1. Realizar un pedido<br>2. Dar de alta Cliente|
 
 
 Adicionales para Aprobación
 |Req|Detalle|
 |:-|:-|
-|CRUD |1. CRUD Tipo Habitacion<br>2. CRUD Servicio<br>3. CRUD Localidad<br>4. CRUD Provincia<br>5. CRUD Habitación<br>6. CRUD Empleado<br>7. CRUD Cliente|
-|CUU/Epic|1. Reservar una habitación para la estadía<br>2. Realizar el check-in de una reserva<br>3. Realizar el check-out y facturación de estadía y servicios|
+|CRUD |1. CRUD Producto<br>2. CRUD Cliente<br>3. CRUD Repartidor<br>4. CRUD Proveedor<br>4. CRUD Repartidor<br>4. CRUD Cajero<br>4. CRUD Repositor<br>4. CRUD Compra<br>4. CRUD Stock|
+|CUU/Epic|1. Modificar Pedido<br>2. Dar de baja productos<br>3. Modificar productos|
 
 
 ### Alcance Adicional Voluntario
